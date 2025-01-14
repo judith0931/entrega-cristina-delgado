@@ -1,0 +1,50 @@
+#imgPrincipal{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no repeat;
+    filter:brightness(0.5);
+    margin-bottom: 10px; /** espacio antes de la seccion1**/
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+input::placeholder {
+    color: grey;
+}
+.contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    z-index: 1000; /** para que este por encima de la imagen **/
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+   #imgPrincipal{
+        /** imagen con la piscina**/
+        width: 100vw;
+        height: 100vh;
+        content: url(./img/banner-mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    
+}

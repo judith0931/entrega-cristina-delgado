@@ -1,0 +1,117 @@
+
+      #x{
+        color: grey;
+        border: solid 1px #B4B7B7;
+        border-radius: 24px;
+        padding: 8px 32px;
+        width: fit-content;
+        background-color: transparent;
+        outline: none;
+     
+      }
+      .contenedor {
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: 1fr 1fr;
+           background-position: center;
+           background-size: cover;
+           height: 100 vh;
+           padding: 100 px;   
+           .buscador {
+              height: fit-content;
+               justify-self: end;
+              position: relative;
+              .imgchart{
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+           }
+           
+           .titulosup {
+              align-self: self-end;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 10px;
+
+               .gris{
+                color: grey;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 45px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+               }
+               .blanco{
+                color: white;
+                font-family: PF Regal Display Pro;
+                font-size: 80px;
+                line-height: 45px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+               }
+               .formatoboton{
+                color: white;
+                text-decoration: none;
+                border: solid 1px white;
+                border-radius: 24px;
+                padding: 8px 32px;
+                width: fit-content;
+                margin-top: 20px;
+                .imgchart{
+                  margin-right: 20px;
+                }
+               }
+           }
+      }
+      @media (max-width: 600px) {
+        .img-container::after {
+          content: url('./img/Group256.png') " View all properties";
+          display: flex;
+          align-items: center; /* Centra el contenido verticalmente */
+          justify-content: flex-start; /* Alinea el contenido a la izquierda horizontalmente */
+          margin-top: 0px; /* Ajusta el margen superior según sea necesario */
+          width: 100%; /* Ajusta el ancho al 100% del contenedor */
+          height: 32px; /* Ajusta la altura del espacio */
+          background-size: contain;
+          color: orange; /* Establece el color del texto a naranja */
+          font-family: 'Arial'; /* Establece la fuente del texto */
+        }
+        .img-container {
+          margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario para crear un espacio debajo del contenido */
+          .contenedor{
+            .buscador{
+              img{
+                display: none;
+              }
+            }
+          }
+        }
+        .contenedor{
+          .buscador{
+            justify-self: center;
+          }
+        }
+        .contenedor{
+          .titulosup{
+            .gris{
+              font-size: 30px;
+            }
+            .blanco{
+              font-size: 45px;
+            }
+            .imgchart{
+              display: none;
+            }
+          .buscador{
+           img {
+              display: none;
+            }
+          }
+          }
+        }
+      }

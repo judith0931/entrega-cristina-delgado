@@ -1,0 +1,26 @@
+#buscar{
+
+        button{
+            background-color: transparent;
+            /**color: white;**/
+            border-radius: 48px;
+            height: fit-content;
+            font-size: 18px;
+            padding: 18px;
+            border-color: white;
+            position: absolute;
+            top: 200px;
+            border: 1px solid;
+            right: 5vw;
+            img{
+                margin-right: 1000px;
+            }
+        }
+
+    } 
+    #buscador{
+        position: absolute;
+        top: 200px;
+        right: 150px;
+    }
+    

@@ -1,0 +1,163 @@
+footer {
+  width: 100%;
+  background-color: black;
+  margin-top: 200px;
+  .negro {
+    color: white;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+    .enlaces {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      font-size: 24px;
+      .primera {
+        align-self: self-end;
+      }
+      .segunda {
+        align-self: center;
+      }
+      .tercera {
+        align-self: self-end;
+        #separado {
+          margin-top: 20px;
+        }
+      }
+
+      .medio {
+        justify-self: center;
+      }
+
+      .ultima {
+        text-align: right;
+        align-self: self-end;
+      }
+
+      ul {
+        li {
+          list-style: none;
+        }
+      }
+    }
+
+    .copy {
+      border-top: solid 2px white;
+      p {
+        margin: 20px 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .gris {
+    background-color: #26282b;
+    width: 90%;
+    margin: auto;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 1fr 1fr */
+    align-items: center;
+
+    .segunda {
+      display: grid;
+      padding: 100px;
+      gap: 10px;
+
+      input {
+        background-color: transparent;
+        border: solid 1px gray;
+        border-radius: 100px;
+        padding: 10px 20px;
+        font-size: 20px;
+      }
+
+      button {
+        background-color: transparent;
+        border: solid 1px orange;
+        color: orange;
+        border-radius: 100px;
+        padding: 10px 20px;
+        font-size: 20px;
+        width: 60%;
+        justify-self: end;
+      }
+
+      p {
+        margin-left: 20px;
+        color: white;
+        font-size: 20px;
+      }
+    }
+
+    #textFooter {
+      font-size: 30px;
+      color: white;
+      justify-self: center;
+
+      span {
+        color: orange;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    margin-top: 10px;
+    .gris {
+      display: none;
+    }
+    .negro {
+      .enlaces {
+        grid-template-columns: repeat(2, 1fr);
+        height: 0;
+        .medio {
+          margin-top: 10px;
+          justify-self: baseline;
+          font-size: 18px;
+          font-weight: lighter;
+          color: #aaa;
+        }
+        .primera {
+          grid-column: span 2;
+        }
+        .ultima {
+          text-align: left;
+          justify-self: baseline;
+          grid-column: span 2;
+          margin-top: 30px;
+        }
+      }
+      .copy {
+        display: none;
+      }
+    }
+  }
+}
+  @media (min-width: 601px) {
+    footer{
+      .gris{
+        .segunda{
+          padding: 10px;
+          font-size: 20px;
+          width: 65%;
+        }
+        #textFooter{
+          font-size: 21px;
+        }
+      }
+      .negro{
+        margin-block-start: -70px;
+      }
+    }
+    }
+    @media (min-width: 320px) and (max-width: 600px){
+      footer{
+        .negro{
+          margin-top: 10px;
+          height: 250px;
+        }
+        
+      }
+    }

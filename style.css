@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'PFRegalDisplayPro-Regular';
+  src: url(./font/PFR/PFRegalDisplayPro-Regular.eot);
+}
+
+/**BRANDON GROTESQUE**/
+@font-face {
+  font-family: 'Brandon_reg';
+  src: url(./font/brandon/Brandon_reg.otf);
+}
+/**TIPO DE LETRA DE PRUEBA**/ 
+@font-face {
+  font-family: 'Last';
+  src: url(./font/lc/LastChristmas.otf);
+}  
+.f1{font-family: 'PFRegalDisplayPro-Regular';}
+.f2{font-family: 'Brandon_reg';}
+.f3{font-family: 'last';
+  color: blue;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PFRegalDisplayPro-Regular';
+}
